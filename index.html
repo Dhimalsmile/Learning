@@ -1,26 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- for responsive in all device -->
 <style>
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* only for Safari */
+  position: sticky;
 }
 
 li {
-  display: inline;
+  float: left;
+  /* border-right:1px solid #bbb; */
+}
+
+li:nth-child(3) {
+  border-right:1px solid #080000;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(241, 43, 192);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 </head>
 <body>
 
 <ul>
-  <li><a href="#home">Home</a></li>
+  <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  <li style="float:right"><a href="#about">Learning</a></li>
 </ul>
+<h2>Introduction</h2>
+<p>Hello! My name is Smile Dhimal and I am a passionate front-end developer. I started my journey in web development several years ago and since then, I have been fascinated by the ever-evolving landscape of front-end technologies.</p>
+
+<h2>Early Beginnings</h2>
+<p>My interest in web development sparked when I created my first website using HTML and CSS. I was captivated by the ability to bring designs to life and make them accessible to users across the globe.</p>
+
+<h2>Learning Curve</h2>
+<p>As I delved deeper into front-end development, I immersed myself in learning various frameworks and libraries such as Bootstrap, jQuery, and React.js. Each new technology presented its own challenges, but overcoming them only fueled my passion further.</p>
+
+<h2>Professional Experience</h2>
+<p>Throughout my career, I have had the opportunity to work on a diverse range of projects, from building responsive websites to developing interactive web applications. With each project, I gained valuable insights and honed my skills as a front-end developer.</p>
+
+<h2>Future Endeavors</h2>
+<p>Looking ahead, I am excited to continue my journey in front-end development and explore emerging technologies that push the boundaries of what is possible on the web. Whether it's mastering new frameworks or contributing to open-source projects, I am committed to lifelong learning and growth.</p>
 
 </body>
 </html>
