@@ -6,9 +6,7 @@
 <title>The Box Model</title>
 <style>
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; 
 }
 
 body {
@@ -27,6 +25,20 @@ div#box {
   text-align: justify; 
   position: relative;
   
+
+}
+
+#box1{
+margin-left: 10px;
+  background-color: #d9f348;
+  padding: 30px 10px 10px 10px;
+  border: 2px solid black;
+  width: 300px;
+  height: 160px;
+  overflow: visible;
+  font-style: italic;
+  text-align: justify; 
+  position: relative;
 }
 
 
@@ -53,10 +65,38 @@ p {
  
   
 }
-/* #p2 {
+
+#p2 {
   background-color: #DEB887;
-  float: right;
-  height: 100px;
+  position:absolute;
+  top: -2px;
+  right: -2px;
+}
+
+/********** Large devices only **********/
+/* @media (min-width: 1200px) {
+  #p1 {
+    width: 80%;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+  }
+} */
+
+
+/********** Medium devices only **********/
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  #p1 {
+    width: 50%;
+  }
+  #p2 {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: blue;
+  }
 } */
 
 section {
@@ -74,9 +114,11 @@ section {
 
 <div id="box">A delicious stir-fried rice dish packed with colorful vegetables. Savory and satisfying, it's a quick and easy meal that's perfect for using leftover rice. Enjoy it on its own or pair it with your favorite vegetarian dishes.
   <p id="p1">Fried Rice</p>
-  <!-- <p id="p2"></p> -->
 </div>
-  <div>
+<div id="box1">A delicious stir-fried rice dish packed with colorful vegetables. Savory and satisfying, it's a quick and easy meal that's perfect for using leftover rice. Enjoy it on its own or pair it with your favorite vegetarian dishes.
+  <p id="p2">Mo:Mo</p>
+</div>  
+<div>
   <section>This is regular content continuing after the the paragraph boxes.</section>
 </div>
 
