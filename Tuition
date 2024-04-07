@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Tutor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f8fa; /* Soft blue-gray background */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark Gray text */
+        }
+
+        header {
+            background-color: #4CAF50; /* Soft green header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #4CAF50; /* Matching green footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#news">About</a></li>
+            <li><a href="Media_Quaries.html">contact</a></li>
+            <li style="float:right"><a href="#About">Login</a></li>
+            <li style="float:right"><a href="Assignment2.html">Signin</a></li>
+          </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>About Us</h2>
+    <p>We are dedicated tutors providing high-quality tuition services to students of all levels.</p>
+
+    <h2>Services</h2>
+    <ul>
+        <li>One-on-one tutoring</li>
+        <li>Group tutoring sessions</li>
+        <li>Test preparation</li>
+        <li>Homework help</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>If you're interested in our services or have any questions, feel free to contact us at <a href="mailto:info@tuitiontutor.com">info@tuitiontutor.com</a>.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tuition Tutor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
