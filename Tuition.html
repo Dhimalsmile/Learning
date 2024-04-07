@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f6f8fa; /* Soft blue-gray background */
+            background-color: #f6f8fa;
+            /* Soft blue-gray background */
             margin: 0;
             padding: 0;
-            color: #333; /* Dark Gray text */
+            color: #333;
+            /* Dark Gray text */
         }
 
         header {
-            background-color: #4CAF50; /* Soft green header */
-            color: white;
-            padding: 20px;
+            background-color: #4CAF50;
+            /* Soft green header */
+            padding: 15px;
             text-align: center;
+
+            nav ul li:nth-child(3) {
+                padding: 6px;
+                border-right: 1px solid #ffffff;
+            }
+
         }
 
         .container {
@@ -47,49 +56,80 @@
         }
 
         footer {
-            background-color: #4CAF50; /* Matching green footer */
+            background-color: #4CAF50;
+            /* Matching green footer */
             color: white;
             text-align: center;
             padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position: -webkit-sticky;
+                /* only for Safari */
+                position: sticky;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #04AA6D;
+            }
+
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#news">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right" id="Sign"><a href="signin">Signin</a></li>
+                <li style="float:right"><a href="#About">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We are dedicated tutors providing high-quality tuition services to students of all levels.</p>
+
+        <h2>Services</h2>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#news">About</a></li>
-            <li><a href="Media_Quaries.html">contact</a></li>
-            <li style="float:right"><a href="#About">Login</a></li>
-            <li style="float:right"><a href="Assignment2.html">Signin</a></li>
-          </ul>
-    </nav>
-</header>
+            <li>One-on-one tutoring</li>
+            <li>Group tutoring sessions</li>
+            <li>Test preparation</li>
+            <li>Homework help</li>
+        </ul>
 
-<div class="container">
-    <h2>About Us</h2>
-    <p>We are dedicated tutors providing high-quality tuition services to students of all levels.</p>
+        <h2>Contact Us</h2>
+        <p>If you're interested in our services or have any questions, feel free to contact us at <a
+                href="mailto:info@tuitiontutor.com">info@tuitiontutor.com</a>.</p>
+    </div>
 
-    <h2>Services</h2>
-    <ul>
-        <li>One-on-one tutoring</li>
-        <li>Group tutoring sessions</li>
-        <li>Test preparation</li>
-        <li>Homework help</li>
-    </ul>
-
-    <h2>Contact Us</h2>
-    <p>If you're interested in our services or have any questions, feel free to contact us at <a href="mailto:info@tuitiontutor.com">info@tuitiontutor.com</a>.</p>
-</div>
-
-<footer>
-    <p>&copy; 2024 Tuition Tutor. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Tuition Tutor. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
